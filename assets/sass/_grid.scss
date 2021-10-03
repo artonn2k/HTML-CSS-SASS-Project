@@ -1,0 +1,23 @@
+$grid-width: 960;
+$nr-of-columns: 12;
+$column-width: $grid-width / $nr-of-columns;
+$colum-margins: 20;
+
+.container {
+  width: #{$grid-width}px;
+  margin: 0 auto;
+}
+
+.row {
+  width: 100%;
+  overflow: auto;
+  display: flex;
+}
+
+@for $i from 1 through 12 {
+  .col-#{$i} {
+    width: #{$i * $column-width - $colum-margins}px;
+    margin: 0px 10px;
+    float: left;
+  }
+}
