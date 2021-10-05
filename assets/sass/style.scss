@@ -115,10 +115,37 @@ header {
     display: flex;
     justify-content: space-around;
 
+    .software p::after{
+      content: url('../img/software.png');
+      padding: 5px;
+    }
+
+    .web p::after{
+      content: url('../img/webdev.png');
+      padding: 5px;
+    }
+
+    .net p::after{
+      content: url('../img/website.png');
+      padding: 5px;
+    }
+
+    .mobile p::after{
+      content: url('../img/mobile-app.png');
+      padding: 5px;
+    }
+
+    .swift p::after{
+      content: url('../img/swift.png');
+      padding: 5px;
+    }
+
     .member {
       display: flex;
       flex-direction: column;
       align-items: center;
+
+      
 
       img {
         border-radius: 50%;
@@ -132,7 +159,7 @@ header {
       p {
         font-size: 12px;
         margin-top: 5px;
-      }
+      }  
     }
   }
 }

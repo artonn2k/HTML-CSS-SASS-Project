@@ -196,6 +196,31 @@ header nav a {
   justify-content: space-around;
 }
 
+.team .team-members .software p::after {
+  content: url("../img/software.png");
+  padding: 5px;
+}
+
+.team .team-members .web p::after {
+  content: url("../img/webdev.png");
+  padding: 5px;
+}
+
+.team .team-members .net p::after {
+  content: url("../img/website.png");
+  padding: 5px;
+}
+
+.team .team-members .mobile p::after {
+  content: url("../img/mobile-app.png");
+  padding: 5px;
+}
+
+.team .team-members .swift p::after {
+  content: url("../img/swift.png");
+  padding: 5px;
+}
+
 .team .team-members .member {
   display: flex;
   flex-direction: column;
