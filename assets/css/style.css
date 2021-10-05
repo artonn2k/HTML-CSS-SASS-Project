@@ -1,6 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@100&display=swap");
-
-
 .container {
   width: 960px;
   margin: 0 auto;
@@ -8,7 +6,6 @@
 
 .row {
   width: 100%;
-  overflow: auto;
   display: flex;
 }
 
@@ -84,29 +81,47 @@
   float: left;
 }
 
-body{
-  padding: 0;
-  margin: 0;
+body {
+  padding: 0px;
+  margin: 0px;
 }
 
-/* Ktu fillon header */
-header{
-  height: 70px;
-  /* margin: 0px auto; */
+h1,
+h2,
+h3 {
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 1px;
 }
 
-.container{
+p,
+a {
+  font-family: "Roboto", sans-serif;
+}
+
+p {
+  line-height: 24px;
+}
+
+header {
+  height: 80px;
+}
+
+header .container {
   display: flex;
   justify-content: space-between;
 }
 
-header .logo{
+header .logo {
+  width: 50%;
+  height: 80px;
+}
+
+header .logo img {
   height: 40px;
   margin: 20px 0px;
 }
 
-
-header nav{
+header nav {
   width: 50%;
   height: 80px;
   display: flex;
@@ -114,66 +129,41 @@ header nav{
   align-items: center;
 }
 
-nav ul{
+header nav ul {
   width: 100%;
-  margin: 0;
-  padding: 0;
-  display: flex;
+  padding: 0px;
+  margin: 0px;
   list-style-type: none;
+  display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-nav ul a{
-  text-decoration: none;
+header nav a {
   color: #1b0f65;
+  text-decoration: none;
   text-transform: uppercase;
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
 }
 
-ul li a:hover{
-  color: darkblue;
-  transition: 0.3s ease-in-out;
-}
-/* dhe ktu mbaron header */
-
-
-/* ktu fillon fotografia dhe sherbimet */
-#slider{
-  background-image: url(../img/slider.jpg);
+.slider {
   height: calc(100vh - 80px);
+  background-image: url("../img/slider.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position-x: center;
 }
 
-p{
-  font-family: "Roboto", sans-serif;
-  text-align: center;
-}
-
-.boxes h2{
-  font-family: "Bebas Neue", cursive;
-}
-
-
-.boxes{
+.services {
   padding: 80px 0px;
   margin-top: -150px;
-  display: flex;
-  flex-direction:row;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  cursor: pointer;
 }
 
-.boxes h2 , .boxes p{
+.services h2,
+.services p {
   text-align: center;
 }
 
-.boxes .box{
+.services .service {
   padding: 20px;
   border-radius: 5px;
   background-color: #fff;
@@ -181,135 +171,70 @@ p{
   box-shadow: 0px 5px 10px -5px #000000;
 }
 
-.leftbox{
-  /* float: left; */
-  width: 20%;
-  height: 300px;
+.services .middle {
+  transform: scale(1.15);
 }
 
-.middlebox{
-  /* float:left; */
-  width: 20%;
-  height: 300px; 
-  transform: scale(1.10);
+.team {
+  padding-bottom: 80px;
 }
 
-.rightbox{
-  /* float: left; */
-  width: 20%;
-  height: 300px;
-}
-/* dhe ktu mbarojn sherbimet  */
-
-/* ktu fillon team members */
-h2{
+.team h2 {
+  font-size: 36px;
   text-align: center;
-  font-family: "Bebas Neue", cursive;
-  font-size: 30px;
-  margin-bottom: 0;
+  margin-bottom: 0px;
 }
-.team p{
-  margin-top: 0;
+
+.team p {
+  margin-top: 0px;
   text-align: center;
 }
 
-.team .team-members{
+.team .team-members {
+  margin-top: 50px;
   display: flex;
-  justify-content:space-evenly ;
-  margin-top: 30px;
-  padding-bottom: 60px;
+  justify-content: space-around;
 }
 
-.team .team-members img{
-  border-radius: 40%;
-}
-
-.team-members .member{
+.team .team-members .member {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.team .team-members .member h4{
-  text-align: center;
+.team .team-members .member img {
+  border-radius: 50%;
+}
+
+.team .team-members .member h4 {
   font-family: "Roboto", sans-serif;
-  font-weight: bold;
+  margin-bottom: 0px;
 }
 
-.team .team-members .member p{
-  font-size: 15px;
-  font-weight: bold;
+.team .team-members .member p {
+  font-size: 12px;
+  margin-top: 5px;
 }
 
-.swift p::after{
-  content: url('../img/swift.png');
-  padding: 5px;
-}
-
-.net p::after{
-  content: url('../img/website.png');
-  padding: 5px;
-}
-
-.mobile p::after{
-  content: url('../img/mobile-app.png');
-  padding: 5px;
-}
-
-.web p::after{
-  content: url('../img/webdev.png');
-  padding: 5px;
-}
-
-.software p::after{
-  content: url('../img/software.png');
-  padding: 5px;
-}
-
-.about{
-  display: flex;
-  flex-direction: row;
-}
-
-
- div .img{
-  height: 400px;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-}
-
-div .text{
-  display: flex;
-  flex-direction: column;
-  padding-right: 20px;
-}
-
-/* .about{
-  padding-top: 50px;
-  height: 400px;
+.about {
+  height: 420px;
+  background-image: url("../img/team.webp");
+  background-repeat: no-repeat;
   background-size: 50% auto;
   background-position-x: left;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
 }
 
-.text{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}*/
+.about p {
+  text-align: justify;
+}
 
-.text2{
+.about-s2 {
   padding: 80px 0px;
 }
 
-.footer{
-  background-image: url('../img/footer.png');
+footer {
   height: 80px;
+  background-image: url("../img/footer.png");
   background-repeat: no-repeat;
   background-size: cover;
-
 }
-
