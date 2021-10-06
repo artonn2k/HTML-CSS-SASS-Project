@@ -38,6 +38,7 @@ header {
     img {
       height: 40px;
       margin: 20px 0px;
+      cursor: pointer;
     }
   }
 
@@ -58,11 +59,21 @@ header {
       align-items: center;
     }
 
+    a:hover{
+      color: darkblue;
+      font-size: 16px;
+      font-weight: bold;
+      transition: 0.5s ease-in-out;
+    }
+
     a {
       color: #1b0f65;
       text-decoration: none;
       text-transform: uppercase;
+      font-size: 15px;
     }
+
+    
   }
 }
 
