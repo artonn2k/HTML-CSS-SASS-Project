@@ -1,0 +1,200 @@
+header {
+    height: 80px;
+  
+    .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .logo {
+      width: 50%;
+      height: 80px;
+  
+      img {
+        height: 40px;
+        margin: 20px 0px;
+        cursor: pointer;
+      }
+    }
+  
+    nav {
+      width: 50%;
+      height: 80px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+  
+      ul {
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+  
+      a:hover{
+        color: darkblue;
+        font-size: 16px;
+        font-weight: bold;
+        transition: 0.5s ease-in-out;
+      }
+  
+      a {
+        color: #1b0f65;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 15px;
+      }
+  
+      
+    }
+  }
+  
+  .slider {
+    height: calc(100vh - 80px);
+    background-image: url("../img/slider.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position-x: center;
+  }
+  
+  .services {
+    padding: 80px 0px;
+    margin-top: -150px;
+  
+    h2,
+    p {
+      text-align: center;
+    }
+  
+    .service {
+      padding: 20px;
+      border-radius: 5px;
+      background-color: #fff;
+      -webkit-box-shadow: 0px 5px 10px -5px #000000;
+      box-shadow: 0px 5px 10px -5px #000000;
+    }
+  
+    .middle {
+      transform: scale(1.15);
+    }
+  
+    .row {
+      // display: block;
+      overflow: inherit;
+      display: flex;
+      flex-direction: row;
+    }
+  
+    .col-4 {
+      width: #{4 * $column-width - $colum-margins}px;
+      margin: 0px 10px;
+      float: left;
+    }
+  
+    .col-4:last-child {
+      width: #{4 * $column-width - $colum-margins}px;
+    }
+  }
+  
+  .team {
+    padding-bottom: 80px ;
+  
+    h2 {
+      font-size: 36px;
+      text-align: center;
+      margin-bottom: 0px;
+    }
+  
+    p {
+      margin-top: 0px;
+      text-align: center;
+    }
+  
+    .team-members {
+      margin-top: 50px;
+      display: flex;
+      justify-content: space-around;
+  
+      .software p::after{
+        content: url('../img/software.png');
+        padding: 5px;
+      }
+  
+      .web p::after{
+        content: url('../img/webdev.png');
+        padding: 5px;
+      }
+  
+      .net p::after{
+        content: url('../img/website.png');
+        padding: 5px;
+      }
+  
+      .mobile p::after{
+        content: url('../img/mobile-app.png');
+        padding: 5px;
+      }
+  
+      .swift p::after{
+        content: url('../img/swift.png');
+        padding: 5px;
+      }
+  
+      .member {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+  
+        
+  
+        img {
+          border-radius: 50%;
+        }
+  
+        h4 {
+          font-family: "Roboto", sans-serif;
+          margin-bottom: 0px;
+        }
+  
+        p {
+          font-size: 12px;
+          margin-top: 5px;
+        }  
+      }
+    }
+  }
+  
+  .about {
+    height: 420px;
+    background-image: url("../img/team.webp");
+    background-repeat: no-repeat;
+    background-size: 50% auto;
+    background-position-x: left;
+    padding-top: 0px;
+  
+    .row{
+      width: 100%;
+      overflow: inherit;
+      display: flex;
+      flex-direction: row;
+    }
+  
+    p {
+      text-align: justify;
+    }
+  }
+  
+  .about-s2 {
+    padding: 80px 0px;
+  }
+  
+  footer {
+    height: 80px;
+    background-image: url("../img/footer.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }

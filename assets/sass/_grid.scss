@@ -1,23 +1,67 @@
-$grid-width: 960;
-$nr-of-columns: 12;
-$column-width: $grid-width / $nr-of-columns;
-$colum-margins: 20;
+// Mobile
+@media (max-width: 576px) {
+  .container {
+    width: 100%;
+  }
 
-.container {
-  width: #{$grid-width}px;
-  margin: 0 auto;
+  .row {
+    width: 100%;
+    // overflow: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  @for $i from 1 through 12 {
+    .col-#{$i} {
+      // width: #{$i * $column-width - $colum-margins}px;
+      width: 90%;
+      margin: 0px auto;
+      float: none;
+    }
+  }
 }
 
-.row {
-  width: 100%;
-  // overflow: auto;
-  display: flex;
+// Tablet
+@media (min-width: 768px) {
+  .container {
+    width: 100%;
+  }
+
+  .row {
+    width: 100%;
+    // overflow: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  @for $i from 1 through 12 {
+    .col-#{$i} {
+      // width: #{$i * $column-width - $colum-margins}px;
+      width: 90%;
+      margin: 0px auto;
+      float: none;
+    }
+  }
 }
 
-@for $i from 1 through 12 {
-  .col-#{$i} {
-    width: #{$i * $column-width - $colum-margins}px;
-    margin: 0px 10px;
-    float: left;
+// Desktop
+@media (min-width: 995px) {
+  .container {
+    width: #{$grid-width}px;
+    margin: 0 auto;
+  }
+
+  .row {
+    width: 100%;
+    // overflow: auto;
+    display: flex;
+  }
+
+  @for $i from 1 through 12 {
+    .col-#{$i} {
+      width: #{$i * $column-width - $colum-margins}px;
+      margin: 0px 10px;
+      float: left;
+    }
   }
 }
